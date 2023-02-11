@@ -24,7 +24,7 @@ jobs:
       id: style
       continue-on-error: true
       run: |
-        flake8 src/my_code >> .github/ISSUE_TEMPLATE/style-issues.md
+        flake8 src/my_code.py >> .github/ISSUE_TEMPLATE/style-issues.md
 
     - name: Style fail message
       if: steps.style.outcome == 'failure'
